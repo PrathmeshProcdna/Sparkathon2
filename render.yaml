@@ -1,0 +1,8 @@
+Services:
+    type: web
+    name: incentive-buddy
+    runtime: python
+    plan: free
+    autoDeploy: false
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run streamlit.py --server.port $PORT --server.address 0.0.0.0
